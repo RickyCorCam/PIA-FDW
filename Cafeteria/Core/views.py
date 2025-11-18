@@ -11,7 +11,7 @@ def sucursales(request):
     lista = Sucursal.objects.all()
     return render(request, "sucursales.html", {"sucursales": lista})
 def promociones(request):
-    promos = promociones.objects.all()
+    promos = Promociones.objects.all()  # ✔ USA EL MODELO
     return render(request, "promociones.html", {"promos": promos})
 def comentarios(request):
     lista = Comentario.objects.all()
