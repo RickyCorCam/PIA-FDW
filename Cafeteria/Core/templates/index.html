@@ -1,21 +1,34 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>Cafetería - Inicio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS específico -->
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
-<body>
-    <h1>Bienvenido a la Cafetería</h1>
+<body class="container py-4">
 
-    <nav>
-        <ul>
-            <li><a href="{% url 'menu' %}">Menú</a></li>
-            <li><a href="{% url 'promociones' %}">Promociones</a></li>
-            <li><a href="{% url 'sucursales' %}">Sucursales</a></li>
-            <li><a href="{% url 'comentarios' %}">Comentarios</a></li>
-        </ul>
-    </nav>
+    <header class="mb-4 text-center">
+        <h1>Bienvenido a la Cafetería</h1>
+        <p class="text-muted">Selecciona una sección para explorar</p>
+    </header>
 
-    <p>Selecciona una opción del menú.</p>
+    <div class="list-group mx-auto" style="max-width:480px;">
+        <a href="{% url 'menu' %}" class="list-group-item list-group-item-action">Menú</a>
+        <a href="{% url 'promociones' %}" class="list-group-item list-group-item-action">Promociones</a>
+        <a href="{% url 'sucursales' %}" class="list-group-item list-group-item-action">Sucursales</a>
+        <a href="{% url 'comentarios' %}" class="list-group-item list-group-item-action">Comentarios</a>
+    </div>
+
+    <!-- Bootstrap JS (opcional) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS específico -->
+    <script src="{% static 'js/index.js' %}"></script>
 </body>
 </html>
