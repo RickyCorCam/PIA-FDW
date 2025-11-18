@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cards.forEach(card => {
         card.addEventListener("click", () => {
-            // quitar color de todos
+           
             cards.forEach(c => c.classList.remove("seleccionado"));
 
-            // agregar color al seleccionado
+            
             card.classList.add("seleccionado");
         });
     });
