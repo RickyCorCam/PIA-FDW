@@ -1,0 +1,27 @@
+body {
+    background-color: #fff0f6;
+    font-family: "Calibri";
+}
+
+h1, h3 {
+    color: #b30059;
+}
+
+.list-group-item {
+    background-color: #ffe0ed;
+    border-left: 5px solid #d11a74;
+}
+
+form label {
+    color: #7a0038;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #b30059;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #7a0038;
+}

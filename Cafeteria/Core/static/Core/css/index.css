@@ -1,0 +1,23 @@
+/* Estilo general */
+body {
+    background-color: #fff3e6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #8b4513;
+    margin-bottom: 25px;
+}
+
+.list-group-item {
+    font-size: 18px;
+    background-color: #ffe0b3;
+    border: none;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.list-group-item:hover {
+    background-color: #ffcf80;
+}

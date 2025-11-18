@@ -1,0 +1,23 @@
+body {
+    background-color: #eaf2ff;
+    font-family: "Verdana";
+}
+
+h1 {
+    color: #0047a3;
+}
+
+.card {
+    background-color: #f4f8ff;
+    border-radius: 12px;
+    border: 2px solid #7ba7e6;
+}
+
+.card-title {
+    color: #003d82;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 15px;
+}

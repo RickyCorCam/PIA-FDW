@@ -1,0 +1,43 @@
+body {
+    background-color: #eefbf3;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    color: #0a7a37;
+}
+
+.list-group-item {
+    background-color: #dff7e8;
+    border-left: 6px solid #29a35b;
+}body {
+    background-color: #eefbf3;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+    color: #0a7a37;
+}
+
+.list-group-item {
+    background-color: #dff7e8;
+    border-left: 6px solid #29a35b;
+}
+
+.list-group-item h5 {
+    color: #0a5c29;
+    font-weight: bold;
+}
+
+.badge {
+    font-size: 14px;
+}
+
+.list-group-item h5 {
+    color: #0a5c29;
+    font-weight: bold;
+}
+
+.badge {
+    font-size: 14px;
+}

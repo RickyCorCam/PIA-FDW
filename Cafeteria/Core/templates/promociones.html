@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Promociones</title>
+</head>
+<body>
+    <h1>Promociones</h1>
+    <a href="{% url 'index' %}">Regresar al inicio</a>
+
+    <ul>
+        {% for p in promos %}
+            <li>
+                <strong>{{ p.titulo }}</strong>
+                <br>
+                {{ p.descripcion }}
+                <br>
+                Descuento: {{ p.descuento }}%
+            </li>
+        {% empty %}
+            <p>No hay promociones disponibles.</p>
+        {% endfor %}
+    </ul>
+</body>
+</html>

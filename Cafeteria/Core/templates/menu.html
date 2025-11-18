@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Menú</title>
+</head>
+<body>
+    <h1>Menú de Productos</h1>
+    <a href="{% url 'index' %}">Regresar al inicio</a>
+
+    <ul>
+        {% for producto in productos %}
+            <li>
+                <strong>{{ producto.nombre }}</strong> - ${{ producto.precio }}
+                <br>
+                {{ producto.descripcion }}
+            </li>
+        {% empty %}
+            <p>No hay productos en el menú.</p>
+        {% endfor %}
+    </ul>
+</body>
+</html>

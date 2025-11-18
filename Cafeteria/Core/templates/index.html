@@ -2,33 +2,20 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cafeteria</title>
-</head>
-<body>
-    <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cafetería - Inicio</title>
-    <link rel="stylesheet" href="">
 </head>
-
 <body>
-    <header>
-        <h1>Bienvenido a la Cafetería</h1>
-    </header>
+    <h1>Bienvenido a la Cafetería</h1>
 
-    <div class="container">
-        <h2>Inicio</h2>
-        <p>¡Bienvenido! Esta es la página principal del sistema de la cafetería.</p>
+    <nav>
+        <ul>
+            <li><a href="{% url 'menu' %}">Menú</a></li>
+            <li><a href="{% url 'promociones' %}">Promociones</a></li>
+            <li><a href="{% url 'sucursales' %}">Sucursales</a></li>
+            <li><a href="{% url 'comentarios' %}">Comentarios</a></li>
+        </ul>
+    </nav>
 
-        <a class="btn" href="#">Entrar</a>
-    </div>
-
-</body>
-</html>
-
+    <p>Selecciona una opción del menú.</p>
 </body>
 </html>

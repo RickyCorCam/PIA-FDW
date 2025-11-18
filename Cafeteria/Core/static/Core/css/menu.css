@@ -1,0 +1,23 @@
+body {
+    background-color: #faf3ef;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: #b55d00;
+}
+
+.card {
+    border-radius: 10px;
+    background-color: #fff8f0;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-title {
+    color: #a04c00;
+    font-weight: bold;
+}
