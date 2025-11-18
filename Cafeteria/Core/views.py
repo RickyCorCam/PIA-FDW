@@ -22,3 +22,5 @@ def guardar_comentario(request):
         texto = request.POST["comentario"]
         Comentario.objects.create(nombre=nombre, comentario=texto)
         return redirect("index")
+def evento(request):
+    return render(request, "evento.html")
