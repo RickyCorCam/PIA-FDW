@@ -1,5 +1,24 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from .models import Producto, Sucursal, Promociones, Comentario
 
 # Create your views here.
 def index(request):
     return render(request, 'Core/index.html')
+def menu(request):
+    productos = Producto.objects.all()
+    return render(request, "menu.html", {"productos": productos})
+def sucursales(request):
+    lista = Sucursal.objects.all()
+    return render(request, "sucursales.html", {"sucursales": lista})
+def promociones(request):
+    promos = promociones.objects.all()
+    return render(request, "promociones.html", {"promos": promos})
+def comentarios(request):
+    lista = Comentario.objects.all()
+    return render(request, "comentarios.html", {"comentarios": lista})
+def guardar_comentario(request):
+    if request.method == "POST":
+        nombre = request.POST["nombre"]
+        texto = request.POST["comentario"]
+        Comentario.objects.create(nombre=nombre, comentario=texto)
+        return redirect("index")
