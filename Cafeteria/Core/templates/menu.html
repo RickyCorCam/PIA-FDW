@@ -42,5 +42,19 @@
 
     <!-- JS específico -->
     <script src="{% static 'js/menu.js' %}"></script>
+    <h1>Menú</h1>
+
+<div style="display:flex; flex-wrap:wrap; gap:20px;">
+    {% for p in productos %}
+    <div style="border:1px solid #ccc; width:220px; padding:10px; border-radius:10px;">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=400" 
+             alt="Producto" style="width:100%; border-radius:10px;">
+        <h3>{{ p.nombre }}</h3>
+        <p>{{ p.descripcion }}</p>
+        <p><b>${{ p.precio }}</b></p>
+    </div>
+    {% endfor %}
+</div>
+
 </body>
 </html>

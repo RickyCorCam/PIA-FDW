@@ -1,0 +1,66 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f3f3;
+}
+
+
+.encabezado {
+    background: #8c4bff;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+
+.contenedor {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+
+.imagen-evento img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+
+.info-evento {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    flex: 1;
+}
+
+.info-evento h2 {
+    margin-top: 0;
+}
+
+#botonInfo {
+    background: #8c4bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#botonInfo:hover {
+    background: #6e2aff;
+}
+
+
+.oculto {
+    display: none;
+    margin-top: 15px;
+    font-size: 18px;
+    color: #5a2dff;
+    font-weight: bold;
+}

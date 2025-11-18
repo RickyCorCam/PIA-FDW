@@ -32,10 +32,34 @@
         {% endfor %}
     </div>
 
-    <!-- Bootstrap JS -->
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- JS específico -->
+   
     <script src="{% static 'js/promociones.js' %}"></script>
+    <h1>Promociones</h1>
+
+<div style="display:flex; flex-wrap:wrap; gap:20px;">
+    {% for promo in promos %}
+    <div style="border:1px solid #ccc; width:250px; padding:10px; border-radius:10px;">
+        <img src="https://images.unsplash.com/photo-1498654896293-37aacf113fd9?w=400"
+             alt="Promo" style="width:100%; border-radius:10px;">
+        <h3>{{ promo.titulo }}</h3>
+        <p>{{ promo.descripcion }}</p>
+        <p><b>Válido hasta: {{ promo.fecha_fin }}</b></p>
+    </div>
+    {% endfor %}
+</div>
+
+<hr>
+
+<h2>Políticas</h2>
+<ul>
+    <li>Las promociones no son acumulables.</li>
+    <li>Aplican únicamente en sucursales participantes.</li>
+    <li>Válidas presentando este cupón en mostrador.</li>
+    <li>Pueden cambiar sin previo aviso.</li>
+</ul>
+
 </body>
 </html>
