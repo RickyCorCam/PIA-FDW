@@ -3,7 +3,7 @@ from .models import Producto, Sucursal, Promociones, Comentario
 
 # Create your views here.
 def index(request):
-    return render(request, 'Core/index.html')
+    return render(request, "index.html")
 def menu(request):
     productos = Producto.objects.all()
     return render(request, "menu.html", {"productos": productos})
