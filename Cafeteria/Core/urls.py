@@ -2,7 +2,7 @@ from django.urls import path
 from . import views
 
 urlspatterns = [
-    path('', views.inicio, name='index'),
+    path('', views.index, name='index'),
     path('menu/', views.menu, name='menu'),
     path('sucursales/', views.sucursales, name='sucursales'),
     path('promociones/', views.promociones, name='promociones'),
